@@ -1,0 +1,705 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="plantilla.master.cs" Inherits="MotorHack.plantilla" %>
+<!--Si-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MotorHack</title>
+    <meta name="description" content="This one page example has a fixed navbar and full page height sections. 
+        Each section is vertically centered on larger screens, and then stack responsively on smaller screens. 
+        Scrollspy is used to activate the current menu item. This layout also has a contact form example.
+         Uses animate.css, FontAwesome, Google Fonts (Lato and Bitter) and Bootstrap." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Codeply">
+
+      <link rel="icon" type="image/png" href="Imagenes/Escudo/IconoMH.ico" />
+
+
+      <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+      <a href="bootstrap/fonts/glyphicons-halflings-regular.svg">bootstrap/fonts/glyphicons-halflings-regular.svg</a>
+    <link href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" rel="stylesheet" />
+      <link href="bootstrap/colorbox/colorbox.css" rel="stylesheet" />
+      <link href="bootstrap/css/styles.css" rel="stylesheet" />
+
+            <script src="bootstrap/colorbox/jquery.colorbox-min.js"></script>
+  </head>
+  <body >
+    <nav class="navbar navbar-trans navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapsible">
+                <span class="sr-only">MotorHack</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+             <!-- Boton Info Bujias -->
+                                         <div class="modal fade" id="InfoBujias" tabindex="-1" role="dialog" aria-labelledby="modallbl" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                            <h4><font color="black">Bujias</font></h4>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <font color="black">Todos los motores de combustion interna, requieren una chispa  para inflamar la mezcla comprimida dentro de la camara de combustion.
+                                                                                Se denomina bujia, al componente encargado de suministrar la chispa de encendido dentro de la camara de combustion, en un motor de combustion interna. 
+                                                                                Las bujias reciben el alto voltage; y se autoejecutan produciendo el arco de chispa requerido para inflamar la mezcla comprimida de aire/combustible.  
+                                                                             <br> <img src="Imagenes/Bujias/Bujias.gif" class="img-responsive center-block" />                                                                             
+                                                            </font>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+            
+             <!-- Boton Info Filtro de Aceite -->
+                                         <div class="modal fade" id="InfoFA" tabindex="-1" role="dialog" aria-labelledby="modallbl" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                            <h4><font color="black">Filtros de Aceite</font></h4>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <font color="black">Elemento adecuado para retener las impurezas contenidas en el aceite lubricante.
+                                                                	            Los filtros están fabricados en su interior con un material poroso de origen textil que permite el paso del aceite pero retiene las impurezas, 
+                                                                                por lo que debemos cambiarlos periódicamente dado con el tiempo se van obstruyendo dificultando el pasaje del aceite.
+                                                                             <br> <img src="Imagenes/Filtros%20de%20Aceite/aceite%20filtro.png" class="img-responsive center-block"/>                                                                          
+                                                            </font>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                      <!-- Boton Info Filtro de Aire -->
+                                        <div class="modal fade" id="InfoFAire" tabindex="-1" role="dialog" aria-labelledby="modallbl" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                            <h4><font color="black">Filtros de Aire</font></h4>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <font color="black">Un filtro de aire es un dispositivo que elimina partículas sólidas como por ejemplo polvo, polen y bacterias del aire.
+                                                                             <br> <img src="Imagenes/Filtros%20de%20Aire/FiltroDeAire.jpg" class="img-responsive center-block"/>                                                                       
+                                                            </font>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+            
+                      <!-- Boton Info Aceites -->
+                                         <div class="modal fade" id="InfoAceites" tabindex="-1" role="dialog" aria-labelledby="modallbl" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                            <h4><font color="black">Aceites</font></h4>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <font color="black">Su propósito principal es lubricar las partes móviles reduciendo la fricción. Además de lubricar el aceite también limpia, 
+                                                                                inhibe la corrosión y reduce la temperatura del motor transmitiendo el calor lejos de las partes móviles para disiparlo.
+                                                                             <br>  <img src="Imagenes/Aceites/vertaceite.jpg" class="img-responsive center-block"/>                                                                  
+                                                            </font>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+            <!-- Boton Info Neumáticos -->
+                                         <div class="modal fade" id="InfoLlantas" tabindex="-1" role="dialog" aria-labelledby="modallbl" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                            <h4><font color="black">Neumáticos</font></h4>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <font color="black"> Tubo de goma que, lleno de aire comprimido y cubierto de caucho, sirve de superficie de rodamiento.
+                                                                             <br> <img src="Imagenes/Llantas/llantas-amt.jpg" class="img-responsive center-block"/>                                                                   
+                                                            </font>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+            <!-- Boton Info Rines -->
+                                         <div class="modal fade" id="InfoRines" tabindex="-1" role="dialog" aria-labelledby="modallbl" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                            <h4><font color="black">Rines</font></h4>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <font color="black">Una rin es una pieza circular, generalmente de metal, situada en el centro de una rueda 
+                                                                                y sobre la que se coloca un neumático y que va unida al eje del vehículo.
+                                                                             <br>  <img src="Imagenes/Rines/rinmom.png" class="img-responsive center-block"/>                                                                  
+                                                            </font>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+            
+            <!-- Boton Info Calipers -->
+                                         <div class="modal fade" id="InfoCalipers" tabindex="-1" role="dialog" aria-labelledby="modallbl" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                            <h4><font color="black">Calipers</font></h4>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <font color="black">El cáliper de freno es el elemento que alberga las pastillas de freno y los pistones de un sistema de frenos de disco, 
+                                                                                y está colocado en posición fija con respecto al automóvil (es decir, no rota) que basa su funcionamiento en apretar 
+                                                                                el disco de freno (que gira a la misma velocidad que la rueda) hasta detenerlo. 
+                                                                             <br>  <img src="Imagenes/Calipers/Calip.jpg" class="img-responsive center-block"/>                                                                  
+                                                            </font>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+             <!-- Boton Info Amortiguadores -->
+                                         <div class="modal fade" id="InfoAmortiguadores" tabindex="-1" role="dialog" aria-labelledby="modallbl" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                            <h4><font color="black">Amortiguadores</font></h4>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <font color="black">Componente de la suspensión del automóvil que tiene la importante tarea de absorber la energía 
+                                                                                y disminuir los movimientos del vehículo cuando se produce un golpe o se conduce en un terreno desigual. 
+                                                                             <br> <img src="Imagenes/Amortiguadores/amort1.png" class="img-responsive center-block"/>                                                                   
+                                                            </font>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                   <!-- Boton Info Suspensiones -->
+                                         <div class="modal fade" id="InfoSuspensiones" tabindex="-1" role="dialog" aria-labelledby="modallbl" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                            <h4><font color="black">Suspensiones</font></h4>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <font color="black">Conjunto de elementos que absorben las irregularidades del terreno por el que se circula para aumentar la comodidad y el control del vehículo. 
+                                                                                El sistema de suspensión actúa entre el chasis y las ruedas, las cuales reciben de forma directa las irregularidades de la superficie transitada.
+                                                                             <br>  <img src="Imagenes/Suspensiones/susp5.jpg" class="img-responsive center-block"/>                                                                  
+                                                            </font>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+              <!-- Boton Info Anticongelantes -->
+                                         <div class="modal fade" id="InfoAnticongelantes" tabindex="-1" role="dialog" aria-labelledby="modallbl" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                            <h4><font color="black">Anticongelantes</font></h4>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <font color="black">El anticongelante es el fluido que se añade al agua en el circuito de refrigeración para enfriar el motor durante la marcha y ayudar así a la disipación del calor.
+                                                                             <br>  <img src="Imagenes/Anticongelantes/anticongelante3.jpg" class="img-responsive center-block"/>                                                                  
+                                                            </font>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+             <!-- Boton Info BombaGas -->
+                                         <div class="modal fade" id="InfoBombaGas" tabindex="-1" role="dialog" aria-labelledby="modallbl" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                            <h4><font color="black">Bombas de Gasolina</font></h4>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <font color="black">La Bomba de Gasolina es la encargada de hacer que el sistema de inyeccion reciba de manera constante
+                                                                                el combustible a través de rieles de los inyectores que mediante succión extraen el líquido del tanque.
+                                                                             <br>    <img src="Imagenes/Bomba%20de%20gasolina/fuel-pump-es.png" class="img-responsive center-block"/>                                                                
+                                                            </font>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+            <a class="navbar-brand text-danger" href="#">MotorHack</a>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-collapsible">
+            <ul class="nav navbar-nav navbar-left">
+                <li><a href="#section1">Inicio</a></li>
+                <li><a href="#section2">Productos</a></li>
+                <li><a href="#section5">Acerca de Nosotros</a></li>
+                <li>&nbsp;</li>
+                
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-heart-o fa-lg"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="container-fluid" id="section1">
+    <div class="v-center">
+        <h1 class="text-center">MotorHack</h1>
+        <h2 class="text-center lato animate slideInDown">El camino hacía adelante</h2>
+        <p class="text-center">
+            <br>
+            <a href="#" class="btn btn-danger btn-lg btn-huge lato" data-toggle="modal" data-target="#myModal">Iniciar Sesión</a>
+        </p>
+    </div>
+    <a href="#section2">
+		<div class="scroll-down bounceInDown animated">
+            <span>
+                <i class="fa fa-angle-down fa-2x"></i>
+            </span>
+		</div>
+        </a>
+</section>
+
+<section id="section2">   
+    <div class="page-header">
+        <h1>Productos <small>Información</small></h1>
+   </div>
+                            <div class="left">
+                              <div class="col-sm-6 col-md-3">
+                                <div class="thumbnail" style="height:480px;">
+                                   <img height="270px" width="270px" src="Imagenes/Bujias/bujias.jpg" />
+                                     <div class="caption">
+                                        <h3>Bujias</h3>                                                 
+                                                <a class='bujias btn btn-primary' href="Imagenes/Bujias/bujias_home.jpg">Imagenes</a> 
+                                                <a  class = 'bujias'  href = "Imagenes/Bujias/BUJIAS2.jpg" style="display:none" ></a> 
+                                                <a  class = 'bujias'  href = "Imagenes/Bujias/bujij.jpg"  style="display:none" ></a> 
+                                      <button class="btn btn-info"  data-toggle="modal" data-target="#InfoBujias">Información</button>
+                                          </div>
+                                     </div>
+                              </div>
+                            </div>
+
+
+                          <div class="center">             
+                              <div class="col-sm-6 col-md-3">
+                                <div class="thumbnail" style="height:480px;">
+                                    <img src="Imagenes/Filtros%20de%20Aceite/filtro-de-aceite-.jpg" />
+                                     <div class="caption">
+                                        <h3>Filtro de Aceite</h3>
+                                              <a class='filtrosa btn btn-primary' href="Imagenes/Filtros%20de%20Aceite/f.aceite.jpg">Imagenes</a> 
+                                              <a  class = 'filtrosa'  href ="Imagenes/Filtros%20de%20Aceite/faceit.jpg" style="display:none" ></a> 
+                                              <a  class = 'filtrosa'  href ="Imagenes/Filtros%20de%20Aceite/HYUNDAI_ACCENT_Oil_Filter_26300_35054.jpg" style="display:none" ></a>      
+                                              <a  class = 'filtrosa'  href ="Imagenes/Filtros%20de%20Aceite/Wix_oil_filter_for_Corvair.jpg" style="display:none" ></a> 
+                                      <button class="btn btn-info"  data-toggle="modal" data-target="#InfoFA">Información</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+
+                        <div class="center">             
+                              <div class="col-sm-6 col-md-3">
+                                <div class="thumbnail" style="height:480px;">
+                                    <img src="Imagenes/Filtros%20de%20Aire/filtro%20de%20aire.jpg" />
+                                     <div class="caption">
+                                        <h3>Filtro de Aire</h3>
+                                            <a  class='filtrosaire btn btn-primary' href="Imagenes/Filtros%20de%20Aire/Faire1.jpg">Imagenes</a>
+                                            <a  class = 'filtrosaire'  href = "Imagenes/Filtros%20de%20Aire/filtro-de-aire-biconico-cromado-deportivo-lavable-para-autos-3866-MLA4873124349_082013-O.jpg" style="display:none" ></a> 
+                                            <a  class = 'filtrosaire'  href = "Imagenes/Filtros%20de%20Aire/universal.jpg" style="display:none" ></a> 
+                                            <a  class = 'filtrosaire'  href = "Imagenes/Filtros%20de%20Aire/kn-filtro-segunda-generacion-63-1561-dodge-ram-hemi-3478-MLM4247017961_052013-O.jpg" style="display:none" ></a> 
+                                      <button class="btn btn-info"  data-toggle="modal" data-target="#InfoFAire">Información</button>
+                                  </div>
+                                </div>
+                              </div>
+                         </div>
+
+
+                  <div class="center">             
+                              <div class="col-sm-6 col-md-3">
+                                <div class="thumbnail" style="height:480px;">
+                                    <div class="caption">
+                                         <img style="width:280px;" src="Imagenes/Aceites/cambiodeaceite.jpeg" />
+                                        <h3>Aceites</h3>
+                                            <a  class='aceites btn btn-primary' href="Imagenes/Aceites/aceite_carro.jpg">Imagenes</a>
+                                            <a  class = 'aceites'  href ="Imagenes/Aceites/aceitecastrol.jpg" style="display:none" ></a> 
+                                            <a  class = 'aceites'  href = "Imagenes/Aceites/b926e2_quaker.jpg"style="display:none" ></a> 
+                                            <a  class = 'aceites'  href = "Imagenes/Aceites/aceite_carrodw.jpg" style="display:none" ></a> 
+                                      <button class="btn btn-info"  data-toggle="modal" data-target="#InfoAceites">Información</button>
+                                  </div>
+                                </div>
+                              </div>
+                         </div>
+                    </section>
+
+<section class="container-fluid" id="section3">
+                         
+                          <div class="right">             
+                              <div class="col-sm-6 col-md-3">
+                                <div class="thumbnail" style="height:480px;">
+                                    <img src="Imagenes/Llantas/neumaticos.jpg" />
+                                     <div class="caption">
+                                        <h3>Neumáticos</h3>
+                                      <a  class='llantas btn btn-primary' href="Imagenes/Llantas/llantasnh.jpg">Imagenes</a>
+                                            <a  class = 'llantas'  href ="Imagenes/Llantas/llantasbem.jpg" style="display:none" ></a> 
+                                            <a  class = 'llantas'  href ="Imagenes/Llantas/neuma.jpg" style="display:none" ></a>
+                                            <a  class = 'llantas'  href ="Imagenes/Llantas/llants.png" style="display:none" ></a> 
+                                      <button class="btn btn-info"  data-toggle="modal" data-target="#InfoLlantas">Información</button>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+
+                         <div class="left">             
+                              <div class="col-sm-6 col-md-3">
+                                <div class="thumbnail" style="height:480px;">
+                                    <img src="Imagenes/Rines/rin.jpg" />
+                                     <div class="caption">
+                                        <h3>Rines</h3>
+                                           <a  class='rines btn btn-primary' href="Imagenes/Rines/Airstrike.jpg">Imagenes</a>
+                                            <a  class = 'rines'  href ="Imagenes/Rines/DARK_BLADE_Anthracite.png" style="display:none" ></a> 
+                                            <a  class = 'rines'  href = "Imagenes/Rines/rine%20mom.png" style="display:none" ></a> 
+                                            <a  class = 'rines'  href = "Imagenes/Rines/rinmom.png" style="display:none" ></a> 
+                                      <button class="btn btn-info"  data-toggle="modal" data-target="#InfoRines">Información</button>
+                                  </div>
+                                </div>
+                              </div>
+                         </div>
+
+                        <div class="right">             
+                              <div class="col-sm-6 col-md-3">
+                                <div class="thumbnail" style="height:480px;">
+                                    <img style="width:550px;" src="Imagenes/Calipers/caliper.jpg" />
+                                     <div class="caption">
+                                        <h3>Calipers</h3>
+                                            <a  class='calipers btn btn-primary' href="Imagenes/Calipers/brembo_calipers_4color.jpg">Imagenes</a>
+                                            <a  class = 'calipers'  href ="Imagenes/Calipers/calipb.jpg" style="display:none" ></a> 
+                                            <a  class = 'calipers'  href = "Imagenes/Calipers/caliper-s.jpg" style="display:none" ></a> 
+                                            <a  class = 'calipers'  href = "Imagenes/Calipers/frenos-caliper-500.jpg" style="display:none" ></a> 
+                                      <button class="btn btn-info"  data-toggle="modal" data-target="#InfoCalipers">Información</button>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+
+                          <div class="right">             
+                              <div class="col-sm-6 col-md-3">
+                                <div class="thumbnail" style="height:480px;">
+                                    <img width="300px;" src="Imagenes/Amortiguadores/amortiguadores.jpeg" />
+                                     <div class="caption">
+                                        <h3>Amortiguadores</h3>
+                                            <a  class='amort btn btn-primary' href="Imagenes/Amortiguadores/amortmonr.png">Imagenes</a>
+                                            <a  class = 'amort'  href ="Imagenes/Amortiguadores/400px-Amortiguador.jpg" style="display:none" ></a> 
+                                            <a  class = 'amort'  href = "Imagenes/Amortiguadores/amort.jpg" style="display:none" ></a> 
+                                            <a  class = 'amort'  href = "Imagenes/Amortiguadores/Fotomural-2-amortiguadores.png" style="display:none" ></a> 
+                                      <button class="btn btn-info"  data-toggle="modal" data-target="#InfoAmortiguadores">Información</button>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+</section>
+
+<section class="container-fluid" id="section4">
+                           
+                          <div class="right">             
+                              <div class="col-sm-6 col-md-3">
+                                <div class="thumbnail" style="height:480px;">
+                                    <img src="Imagenes/Suspensiones/susp-mcpherson-foto.jpg" />
+                                     <div class="caption">
+                                        <h3>Suspensiones</h3>
+                                            <a  class='susp btn btn-primary' href="Imagenes/Suspensiones/susp1.jpg" >Imagenes</a>
+                                            <a  class = 'susp'  href ="Imagenes/Suspensiones/susp2.jpg" style="display:none" ></a> 
+                                            <a  class = 'susp'  href = "Imagenes/Suspensiones/suspension-03.jpg" style="display:none" ></a> 
+                                            <a  class = 'susp'  href = "Imagenes/Suspensiones/suspension-04.jpg" style="display:none" ></a> 
+                                      <button class="btn btn-info"  data-toggle="modal" data-target="#InfoSuspensiones">Información</button>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>    
+                           
+                           <div class="right">             
+                              <div class="col-sm-6 col-md-3">
+                                <div class="thumbnail" style="height:480px;">
+                                    <img src="Imagenes/Anticongelantes/anticongelante.jpg" />
+                                     <div class="caption">
+                                        <h3>Anticongelantes</h3>
+                                            <a  class='anticon btn btn-primary' href="Imagenes/Anticongelantes/ant.jpg">Imagenes</a>
+                                            <a  class = 'anticon'  href ="Imagenes/Anticongelantes/anticong1.jpg" style="display:none" ></a> 
+                                            <a  class = 'anticon'  href = "Imagenes/Anticongelantes/anticongelante.jpg" style="display:none" ></a> 
+                                            <a  class = 'anticon'  href = "Imagenes/Anticongelantes/anticongelante2.jpg" style="display:none" ></a> 
+                                      <button class="btn btn-info"  data-toggle="modal" data-target="#InfoAnticongelantes">Información</button>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>  
+                            
+                           <div class="right">             
+                              <div class="col-sm-6 col-md-3">
+                                <div class="thumbnail" style="height:480px;">
+                                     <div class="caption">
+                                         <img src="Imagenes/Bomba%20de%20gasolina/bombagas.jpg" />
+                                        <h3>Bomba de Gasolina</h3>
+                                            <a  class='bgas btn btn-primary' href="Imagenes/Bomba%20de%20gasolina/Gasoline_b.jpg">Imagenes</a>
+                                            <a  class = 'bgas'  href ="Imagenes/Bomba%20de%20gasolina/bombagas2.jpeg" style="display:none" ></a> 
+                                            <a  class = 'bgas'  href ="Imagenes/Bomba%20de%20gasolina/bombas+de+gasolina.jpg" style="display:none" ></a> 
+                                            <a  class = 'bgas'  href ="Imagenes/Bomba%20de%20gasolina/bgasolina.jpg" style="display:none" ></a> 
+                                      <button class="btn btn-info"  data-toggle="modal" data-target="#InfoBombaGas">Información</button>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>              
+</section>
+
+<section id="section5">
+    <div class="container v-center">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center">Acerca de Nosotros</h1>
+                <hr>
+                    <div class="col-sm-6 col-md-3">
+                        <a href="/Nosotros/Objetivo.aspx" class="thumbnail">
+                            <img src="Imagenes/Botones/Objetivo.jpg" class="img-responsive" />
+                        </a>
+                   </div>
+                <div class="col-sm-6 col-md-3">
+                        <a href="/Nosotros/Ventajas.aspx" class="thumbnail">
+                            <img src="Imagenes/Botones/Ventajas.jpg" class="img-responsive" />
+                        </a>
+                   </div>
+                <div class="col-sm-6 col-md-3">
+                        <a href="/Nosotros/Contacto.aspx" class="thumbnail">
+                            <img src="Imagenes/Botones/Contacto.jpg" class="img-responsive" />
+                        </a>
+                   </div>
+                <div class="col-sm-6 col-md-3">
+                        <a href="/Nosotros/Unidades_Aprendizaje.aspx" class="thumbnail">
+                            <img src="Imagenes/Botones/Unidades%20de%20Aprendizaje.jpg" class="img-responsive" />
+                        </a>
+                   </div>
+          </div>
+     </div>
+</div> 
+</section>
+    <section id="section6" >
+   <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="500" height="400" id="FlashID" title="M" class="center-block">
+  <param name="movie" value="Media/Mascara1.swf" />
+  <param name="quality" value="high" />
+  <param name="wmode" value="opaque" />
+  <param name="swfversion" value="15.0.0.0" />
+  <param name="expressinstall" value="Scripts/expressInstall.swf" />
+  <object type="application/x-shockwave-flash" data="Media/Mascara1.swf"" width="500" height="400">
+    <!--<![endif]-->
+    <param name="quality" value="high" />
+    <param name="wmode" value="opaque" />
+    <param name="swfversion" value="15.0.0.0" />
+    <param name="expressinstall" value="Scripts/expressInstall.swf" />
+    <!-- El navegador muestra el siguiente contenido alternativo para usuarios con Flash Player 6.0 o versiones anteriores. -->
+    <div>
+      <h4>El contenido de esta página requiere una versión más reciente de Adobe Flash Player.</h4>
+      <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Obtener Adobe Flash Player" width="112" height="33" /></a></p>
+    </div>
+  </object>
+  <!--<![endif]-->
+</object>
+
+      </section>
+
+<section class="container-fluid" id="section7">
+    <div class="row">
+        <!--fontawesome icons-->
+        <div class="col-sm-1 col-sm-offset-3 col-xs-4 text-center">
+            <i class="fa fa-github fa-4x"></i>
+        </div>
+        <div class="col-sm-1 col-xs-4 text-center">
+            <i class="fa fa-foursquare fa-4x"></i>
+        </div>
+        <div class="col-sm-1 col-xs-4 text-center">
+            <i class="fa fa-pinterest fa-4x"></i>
+        </div>
+        <div class="col-sm-1 col-xs-4 text-center">
+            <i class="fa fa-google-plus fa-4x"></i>
+        </div>
+        <div class="col-sm-1 col-xs-4 text-center">
+            <i class="fa fa-twitter fa-4x"></i>
+        </div>
+        <div class="col-sm-1 col-xs-4 text-center">
+            <i class="fa fa-dribbble fa-4x"></i>
+        </div>
+    </div>
+</section>
+
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6 col-sm-6 col-md-3 column">
+                <h4>Información</h4>
+                <ul class="nav">
+                    <li><a href="#section2">Productos</a></li>
+                    <li><a href="#section5">Acerca de Nosotros</a></li>
+                    <li><a href="Aviso_de_Privacidad.aspx">Aviso de Privacidad</a></li>
+                    <li><a href="Terminos_y_Condiciones.aspx">Terminos &amp; Condiciones</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-6 col-md-3 column">
+                <h4>Siguenos</h4>
+                <ul class="nav">
+                    <li><a href="https://twitter.com/MotorHack">Twitter</a></li>
+                    <li><a href="https://www.facebook.com/MotorHack?fref=ts">Facebook</a></li>
+                    <li><a href="https://instagram.com/motorhack0">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--/row-->
+        <p class="text-right">©2015  MotorHack</p>
+    </div>
+</footer>
+
+<div class="scroll-up">
+	<a href="#"><i class="fa fa-angle-up"></i></a>
+</div>
+
+<!--/ASJKFBJSF-->
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                
+            </div>
+            <div class="modal-body row">
+                <form runat="server" id="frmLogin" class="col-md-10 col-md-offset-1 col-xs-12 col-xs-offset-0">
+                    <div id="dvInicioSesion">
+                        <h2 class="text-center"><img src="Imagenes/Escudo/MH.png" class="img-circle"><br>Iniciar Sesion</h2>
+                        <h6 class="text-center">Completa los siguientes campos</h6>
+                        <div class="form-group">
+                            <asp:TextBox ID="txtEmail" class="form-control input-lg" placeholder="Email" required="required" runat="server"></asp:TextBox>
+                        </div>
+                        <div class="form-group">
+                            <asp:TextBox ID="txtPassword" class="form-control input-lg" MaxLength="15" placeholder="Password" required="required"  runat="server" EnableViewState="True" TextMode="Password"></asp:TextBox>
+                        </div>
+                        <div class="form-group">
+                            <asp:Button ID="btnInic"  class="btn btn-danger btn-lg btn-block" OnClick="btnInic_Click" runat="server" Text="Iniciar Sesión" />
+                            <span class="pull-right"><a href="#" data-toggle="modal" onclick="fnRegistrarse();" data-target="#Registrarse">Registrarse</a></span>
+                        </div>
+                                            <a href="Olvidaste_Contrasena.aspx" class="text-muted center-block">¿Olvidaste tu contraseña?</a>
+                    </div>
+                    <div id="dvRegistrarse">
+                         <h2 class="text-center"><img src="Imagenes/Escudo/MH.png" class="img-circle"><br>Registrarse</h2>
+                        <h6 class="text-center">Completa los siguientes campos</h6>
+                        <div class="form-group">
+                            <asp:TextBox ID="txtUsuario"  class="form-control input-lg"  placeholder="Nickname" runat="server"></asp:TextBox>
+                        </div>
+                        <div class="form-group">
+                            <asp:TextBox ID="txtContrasena"  class="form-control input-lg"  MaxLength="15" placeholder="Contraseña" TextMode="Password" runat="server"></asp:TextBox>
+
+                        </div>
+                        <div class="form-group">
+                            <asp:TextBox ID="txtConfContra"  class="form-control input-lg" MaxLength="15" placeholder="Confirmar Contraseña" TextMode="Password" runat="server"></asp:TextBox>
+                        </div>
+                        <div class="form-group">
+                            <asp:TextBox ID="txtCorreo"  class="form-control input-lg" placeholder="Correo Electrónico" runat="server"></asp:TextBox>
+                        </div>
+                        <div class="form-group">
+                            <asp:TextBox ID="txtNombreCompleto"  class="form-control input-lg" placeholder="Nombre Completo" runat="server"></asp:TextBox>
+                        </div>
+                        <div class="form-group">
+                            <asp:TextBox ID="txtRFC"   class="form-control input-lg" MaxLength="13" placeholder="RFC" styles="text-transform: uppercase"  runat="server"></asp:TextBox>
+                        </div>
+                        <div class="form-group">
+                            <asp:Button ID="btnRegistrar" class="btn btn-danger btn-lg btn-block" OnClick="btnRegistrar_Click" runat="server" Text="Registrarse" />
+                            <span class="pull-left"><a href="#" data-toggle="modal" onclick="fnRegresar();" data-target="#InicioSesion">Regresar</a></span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <h6 class="text-center"><a href="Aviso_de_Privacidad.aspx">Aviso de Privacidad</a></h6>
+            </div>
+        </div>
+    </div>
+</div>
+ 
+    <div class="container">
+
+        <asp:ContentPlaceHolder ID="contenedor_principal" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+    </div>
+    <!--scripts loaded here-->
+    
+      <script src="bootstrap/scripts/jquery.min.js"></script>
+      <script src="bootstrap/scripts/bootstrap.min.js"></script>
+      <script src="bootstrap/colorbox/jquery.colorbox-min.js"></script>
+    <script type="text/javascript">
+        jQuery(function () {
+            jQuery("#dvRegistrarse").hide();
+            jQuery(".bujias").colorbox({ rel: 'bujias' });
+            jQuery(".filtrosa").colorbox({ rel: 'filtrosa' });
+            jQuery(".filtrosaire").colorbox({ rel: 'filtrosaire' });
+            jQuery(".aceites").colorbox({ rel: 'aceites' });
+            jQuery(".llantas").colorbox({ rel: 'llantas' });
+            jQuery(".rines").colorbox({ rel: 'rines' });
+            jQuery(".calipers").colorbox({ rel: 'calipers' });
+            jQuery(".amort").colorbox({ rel: 'amort' });
+            jQuery(".susp").colorbox({ rel: 'susp' });
+            jQuery(".anticon").colorbox({ rel: 'anticon' });
+            jQuery(".bgas").colorbox({ rel: 'bgas' });
+
+        });
+
+        function fnRegistrarse() {
+
+
+
+            jQuery("#dvRegistrarse").show('slow');
+            jQuery("#dvInicioSesion").hide('slow');
+
+            jQuery("#txtEmail").removeProp("required");
+            jQuery("#txtPassword").removeProp("required");
+
+            jQuery("#txtUsuario").prop("required", "required");
+            jQuery("#txtContrasena").prop("required", "required");
+            jQuery("#txtConfContra").prop("required", "required");
+            jQuery("#txtCorreo").prop("required", "required");
+            jQuery("#txtNombreCompleto").prop("required", "required");
+            jQuery("#txtRFC").prop("required", "required");
+        }
+        function fnRegresar() {
+            jQuery("#dvRegistrarse").hide('slow');
+            jQuery("#dvInicioSesion").show('slow');
+
+            jQuery("#txtEmail").prop("required", "required");
+            jQuery("#txtPassword").prop("required", "required");
+
+            jQuery("#txtUsuario").removeProp("required");
+            jQuery("#txtContrasena").removeProp("required");
+            jQuery("#txtConfContra").removeProp("required");
+            jQuery("#txtCorreo").removeProp("required");
+            jQuery("#txtNombreCompleto").removeProp("required");
+            jQuery("#txtRFC").removeProp("required");
+        }
+
+    </script>
+      
+      
+             
+  </body>
+</html>

@@ -1,0 +1,80 @@
+C:\Users\Usuario\Documents\Visual Studio 2012\Projects\Practica_5\Conexion\bin\Debug\Conexion.dll
+C:\Users\Usuario\Documents\Visual Studio 2012\Projects\Practica_5\Conexion\bin\Debug\Conexion.pdb
+C:\Users\Usuario\Documents\Visual Studio 2012\Projects\Practica_5\Conexion\obj\Debug\Conexion.csprojResolveAssemblyReference.cache
+C:\Users\Usuario\Documents\Visual Studio 2012\Projects\Practica_5\Conexion\obj\Debug\Conexion.dll
+C:\Users\Usuario\Documents\Visual Studio 2012\Projects\Practica_5\Conexion\obj\Debug\Conexion.pdb
+E:\Practica_5v1.2\Conexion\bin\Debug\Conexion.dll
+E:\Practica_5v1.2\Conexion\bin\Debug\Conexion.pdb
+E:\Practica_5v1.2\Conexion\obj\Debug\Conexion.csprojResolveAssemblyReference.cache
+E:\Practica_5v1.2\Conexion\obj\Debug\Conexion.dll
+E:\Practica_5v1.2\Conexion\obj\Debug\Conexion.pdb
+C:\Users\Propietario\Desktop\Practica_5v1.2\Conexion\bin\Debug\Conexion.dll
+C:\Users\Propietario\Desktop\Practica_5v1.2\Conexion\bin\Debug\Conexion.pdb
+C:\Users\Propietario\Desktop\Practica_5v1.2\Conexion\obj\Debug\Conexion.csprojResolveAssemblyReference.cache
+C:\Users\Propietario\Desktop\Practica_5v1.2\Conexion\obj\Debug\Conexion.dll
+C:\Users\Propietario\Desktop\Practica_5v1.2\Conexion\obj\Debug\Conexion.pdb
+G:\Proyecto\Conexion\bin\Debug\Conexion.dll
+G:\Proyecto\Conexion\bin\Debug\Conexion.pdb
+G:\Proyecto\Conexion\obj\Debug\Conexion.csprojResolveAssemblyReference.cache
+G:\Proyecto\Conexion\obj\Debug\Conexion.dll
+G:\Proyecto\Conexion\obj\Debug\Conexion.pdb
+E:\Proyecto\Conexion\bin\Debug\Conexion.dll
+E:\Proyecto\Conexion\bin\Debug\Conexion.pdb
+E:\Proyecto\Conexion\obj\Debug\Conexion.csprojResolveAssemblyReference.cache
+E:\Proyecto\Conexion\obj\Debug\Conexion.dll
+E:\Proyecto\Conexion\obj\Debug\Conexion.pdb
+E:\Cohen 6IV6\d\Conexion\bin\Debug\Conexion.dll
+E:\Cohen 6IV6\d\Conexion\bin\Debug\Conexion.pdb
+E:\Cohen 6IV6\d\Conexion\obj\Debug\Conexion.csprojResolveAssemblyReference.cache
+E:\Cohen 6IV6\d\Conexion\obj\Debug\Conexion.dll
+E:\Cohen 6IV6\d\Conexion\obj\Debug\Conexion.pdb
+G:\Proyecto\d\Conexion\obj\Debug\Conexion.csprojResolveAssemblyReference.cache
+G:\Proyecto\d\Conexion\obj\Debug\Conexion.dll
+G:\Proyecto\d\Conexion\bin\Debug\Conexion.dll
+G:\Proyecto\d\Conexion\bin\Debug\Conexion.pdb
+G:\Proyecto\d\Conexion\obj\Debug\Conexion.pdb
+E:\Proyecto\d\Conexion\bin\Debug\Conexion.dll
+E:\Proyecto\d\Conexion\bin\Debug\Conexion.pdb
+E:\Proyecto\d\Conexion\obj\Debug\Conexion.csprojResolveAssemblyReference.cache
+E:\Proyecto\d\Conexion\obj\Debug\Conexion.dll
+E:\Proyecto\d\Conexion\obj\Debug\Conexion.pdb
+F:\Proyecto\MH\Conexion\bin\Debug\Conexion.dll
+F:\Proyecto\MH\Conexion\bin\Debug\Conexion.pdb
+F:\Proyecto\MH\Conexion\obj\Debug\Conexion.csprojResolveAssemblyReference.cache
+F:\Proyecto\MH\Conexion\obj\Debug\Conexion.dll
+F:\Proyecto\MH\Conexion\obj\Debug\Conexion.pdb
+G:\Proyecto\MH\Conexion\bin\Debug\Conexion.dll
+G:\Proyecto\MH\Conexion\bin\Debug\Conexion.pdb
+G:\Proyecto\MH\Conexion\obj\Debug\Conexion.csprojResolveAssemblyReference.cache
+G:\Proyecto\MH\Conexion\obj\Debug\Conexion.dll
+G:\Proyecto\MH\Conexion\obj\Debug\Conexion.pdb
+E:\Proyecto\MH\Conexion\bin\Debug\Conexion.dll
+E:\Proyecto\MH\Conexion\bin\Debug\Conexion.pdb
+E:\Proyecto\MH\Conexion\obj\Debug\Conexion.csprojResolveAssemblyReference.cache
+E:\Proyecto\MH\Conexion\obj\Debug\Conexion.dll
+E:\Proyecto\MH\Conexion\obj\Debug\Conexion.pdb
+F:\MH\Conexion\bin\Debug\Conexion.dll
+F:\MH\Conexion\bin\Debug\Conexion.pdb
+F:\MH\Conexion\obj\Debug\Conexion.csprojResolveAssemblyReference.cache
+F:\MH\Conexion\obj\Debug\Conexion.dll
+F:\MH\Conexion\obj\Debug\Conexion.pdb
+G:\MH\Conexion\bin\Debug\Conexion.dll
+G:\MH\Conexion\bin\Debug\Conexion.pdb
+G:\MH\Conexion\obj\Debug\Conexion.csprojResolveAssemblyReference.cache
+G:\MH\Conexion\obj\Debug\Conexion.dll
+G:\MH\Conexion\obj\Debug\Conexion.pdb
+E:\MH\Conexion\bin\Debug\Conexion.dll
+E:\MH\Conexion\bin\Debug\Conexion.pdb
+E:\MH\Conexion\obj\Debug\Conexion.dll
+E:\MH\Conexion\obj\Debug\Conexion.pdb
+E:\MH\Conexion\obj\Debug\Conexion.csprojResolveAssemblyReference.cache
+C:\Users\ROGE\Desktop\MH\Conexion\bin\Debug\Conexion.dll
+C:\Users\ROGE\Desktop\MH\Conexion\bin\Debug\Conexion.pdb
+C:\Users\ROGE\Desktop\MH\Conexion\obj\Debug\Conexion.csprojResolveAssemblyReference.cache
+C:\Users\ROGE\Desktop\MH\Conexion\obj\Debug\Conexion.dll
+C:\Users\ROGE\Desktop\MH\Conexion\obj\Debug\Conexion.pdb
+C:\Users\JCVELMON\Desktop\MH\MH\Conexion\bin\Debug\Conexion.dll
+C:\Users\JCVELMON\Desktop\MH\MH\Conexion\bin\Debug\Conexion.pdb
+C:\Users\JCVELMON\Desktop\MH\MH\Conexion\obj\Debug\Conexion.csprojResolveAssemblyReference.cache
+C:\Users\JCVELMON\Desktop\MH\MH\Conexion\obj\Debug\Conexion.dll
+C:\Users\JCVELMON\Desktop\MH\MH\Conexion\obj\Debug\Conexion.pdb

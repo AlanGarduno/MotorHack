@@ -1,0 +1,94 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Nosotros.master.cs" Inherits="MotorHack.Nosotros.Nosotros" %>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="icon" type="image/png" href=../Imagenes/Escudo/IconoMH.ico />
+
+    <title>Acerca de Nosotros</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    
+    <link href="../bootstrap/css/simple-sidebar.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="Acerca_de_Nosotros.aspx">
+                        Acerca de Nosotros
+                    </a>
+                </li>
+                <li>
+                    <a href="/Nosotros/Objetivo.aspx">Objetivo</a>
+                </li>
+                <li>
+                    <a href="/Nosotros/Ventajas.aspx">Ventajas</a>
+                </li>
+                <li>
+                    <a href="/Nosotros/Contacto.aspx">Contacto</a>
+                </li>
+                <li>
+                    <a href="/Nosotros/Unidades_Aprendizaje.aspx">Unidades de Aprendizaje</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="center-block">
+                                <div class="col-sm-6 col-md-4">
+                                       <a href="#" class="thumbnail">
+                                            <img src="../Imagenes/Escudo/MH.png" class="img-responsive" />
+                                       </a>
+                                </div>
+                        </div>
+                        <h1>Acerca de Nosotros</h1>
+                        <p>Somos una empresa Mexicana que se dedica a la comercialización de una extensa gama de refacciones automotrices de las mejores marcas. 
+                            Nuestro nombre comercial es MotorHack.</p>
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Ocultar/Ver Menu</a>
+                        <asp:ContentPlaceHolder ID="contenedor_nosotros" runat="server"></asp:ContentPlaceHolder>
+                        
+                                <div class="row">
+                                      <a href="javascript:history.back()" class="btn btn-default" id="btnRegresar">Regresar</a>
+                                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+    
+    </div>
+
+    <script src="../bootstrap/scripts/jquery.min.js"></script>
+    <script src="../bootstrap/scripts/bootstrap.min.js"></script>
+
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+        </body>
+
+</html>

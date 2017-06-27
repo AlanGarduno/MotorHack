@@ -1,0 +1,15 @@
+﻿<Properties StartupConfiguration="{680C3889-EFE8-4300-8C65-8C7E45613611}|">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="MotorHack\MotorHack.csproj">
+    <Files>
+      <File FileName="MotorHack\MotorHack.csproj" Line="750" Column="3" />
+      <File FileName="MotorHack\MotorHack.csproj" Line="750" Column="3" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.MotorHack PreferredExecutionTarget="FirefoxHTML" />
+</Properties>

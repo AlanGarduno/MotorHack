@@ -1,0 +1,76 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Cliente.master.cs" Inherits="MotorHack.Clientes.Cliente" %>
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>MotorHack Shop</title>
+		<meta name="generator" content="Bootply" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet" /> 
+
+		<link rel="icon" type="image/png" href="../Imagenes/Escudo/IconoMH.ico" />
+       
+	</head>
+	<body>
+        <form runat="server" id="frmLogin" class="col-md-10 col-md-offset-1 col-xs-12 col-xs-offset-0"> 
+            
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	
+	<div class="navbar-header">
+		<a class="navbar-brand" rel="home" href="IndexClientes.aspx">MotorHack Shop</a>
+	</div>
+	
+	<div class="collapse navbar-collapse">
+        
+
+<div class="col-sm-3 col-md-3 pull-left">
+               <ul class="nav navbar-nav navbar-left">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                            <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                            Usuarios <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="/Clientes/Configuracion.aspx">
+                                <span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>
+                                Configuración
+                                </a></li>
+                            <li><a href="../Index.aspx">
+                                <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span>
+                                Cerrar sesión
+                                </a></li>
+                        </ul>
+                    </li>
+               </ul>
+</div>
+        <div class="col-sm-3 col-md-3 pull-right">
+            <ul class="nav navbar-nav navbar-right">
+          <li><a href="/Clientes/Carrito.aspx" type="button" class="btn btn-default btn-sm">
+    <span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+                </ul>
+		</div>
+	</div>
+</div>
+                
+
+                 
+                 
+<div class="container">
+
+    
+        <asp:ContentPlaceHolder ID="contenedor_clientes" runat="server">
+        
+        </asp:ContentPlaceHolder>
+      
+
+</div>
+     </form> 
+        <script src="/bootstrap/scripts/jquery.min.js"></script>
+        <script type="text/javascript">
+            jQuery.noConflict();
+        </script>
+        <script src="/bootstrap/scripts/bootstrap.min.js"></script>
+	</body>
+</html>

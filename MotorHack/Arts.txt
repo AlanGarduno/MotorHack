@@ -1,0 +1,2 @@
+background: center no-repeat fixed url('//image.motortrend.com/f/wot/video-find-the-dramatic-reading-of-the-bugatti-16c-galibier-concept-199143/59250841/bugatti-16c-galibier-video-3.jpg');
+    '); background-size: cover;

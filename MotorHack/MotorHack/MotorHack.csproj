@@ -1,0 +1,778 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{680C3889-EFE8-4300-8C65-8C7E45613611}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MotorHack</RootNamespace>
+    <AssemblyName>MotorHack</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>..\itextsharp-all-5.5.4\itextsharp-dll-core\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Administradores\AgregarProductos.aspx" />
+    <Content Include="Administradores\css\bootstrap-responsive.css" />
+    <Content Include="Administradores\css\bootstrap-responsive.min.css" />
+    <Content Include="Administradores\css\bootstrap.css" />
+    <Content Include="Administradores\css\bootstrap.min.css" />
+    <Content Include="Administradores\css\chosen.css" />
+    <Content Include="Administradores\css\elfinder.min.css" />
+    <Content Include="Administradores\css\elfinder.theme.css" />
+    <Content Include="Administradores\css\font-awesome-ie7.min.css" />
+    <Content Include="Administradores\css\font-awesome.min.css" />
+    <Content Include="Administradores\css\fullcalendar.css" />
+    <Content Include="Administradores\css\glyphicons.css" />
+    <Content Include="Administradores\css\halflings.css" />
+    <Content Include="Administradores\css\ie.css" />
+    <Content Include="Administradores\css\ie9.css" />
+    <Content Include="Administradores\css\jquery-ui-1.8.21.custom.css" />
+    <Content Include="Administradores\css\jquery.cleditor.css" />
+    <Content Include="Administradores\css\jquery.gritter.css" />
+    <Content Include="Administradores\css\jquery.iphone.toggle.css" />
+    <Content Include="Administradores\css\jquery.noty.css" />
+    <Content Include="Administradores\css\noty_theme_default.css" />
+    <Content Include="Administradores\css\style-forms.css" />
+    <Content Include="Administradores\css\style-responsive.css" />
+    <Content Include="Administradores\css\style.css" />
+    <Content Include="Administradores\css\uniform.default.css" />
+    <Content Include="Administradores\css\uploadify.css" />
+    <Content Include="Administradores\font\glyphicons-regular.svg" />
+    <Content Include="Administradores\font\glyphiconshalflings-regular.svg" />
+    <Content Include="Administradores\Index.aspx" />
+    <Content Include="Administradores\IngresarDevoluciones.aspx" />
+    <Content Include="Administradores\js\bootstrap.js" />
+    <Content Include="Administradores\js\bootstrap.min.js" />
+    <Content Include="Administradores\js\counter.js" />
+    <Content Include="Administradores\js\custom.js" />
+    <Content Include="Administradores\js\excanvas.js" />
+    <Content Include="Administradores\js\fullcalendar.min.js" />
+    <Content Include="Administradores\js\jquery-1.9.1.min.js" />
+    <Content Include="Administradores\js\jquery-migrate-1.0.0.min.js" />
+    <Content Include="Administradores\js\jquery-ui-1.10.0.custom.min.js" />
+    <Content Include="Administradores\js\jquery.chosen.min.js" />
+    <Content Include="Administradores\js\jquery.cleditor.min.js" />
+    <Content Include="Administradores\js\jquery.cookie.js" />
+    <Content Include="Administradores\js\jquery.dataTables.min.js" />
+    <Content Include="Administradores\js\jquery.elfinder.min.js" />
+    <Content Include="Administradores\js\jquery.flot.js" />
+    <Content Include="Administradores\js\jquery.flot.pie.js" />
+    <Content Include="Administradores\js\jquery.flot.resize.min.js" />
+    <Content Include="Administradores\js\jquery.flot.stack.js" />
+    <Content Include="Administradores\js\jquery.gritter.min.js" />
+    <Content Include="Administradores\js\jquery.imagesloaded.js" />
+    <Content Include="Administradores\js\jquery.iphone.toggle.js" />
+    <Content Include="Administradores\js\jquery.knob.modified.js" />
+    <Content Include="Administradores\js\jquery.masonry.min.js" />
+    <Content Include="Administradores\js\jquery.noty.js" />
+    <Content Include="Administradores\js\jquery.raty.min.js" />
+    <Content Include="Administradores\js\jquery.sparkline.min.js" />
+    <Content Include="Administradores\js\jquery.ui.touch-punch.js" />
+    <Content Include="Administradores\js\jquery.uniform.min.js" />
+    <Content Include="Administradores\js\jquery.uploadify-3.1.min.js" />
+    <Content Include="Administradores\js\modernizr.js" />
+    <Content Include="Administradores\js\npm.js" />
+    <Content Include="Administradores\js\retina.js" />
+    <Content Include="Administradores\Productos.aspx" />
+    <Content Include="Administradores\Usuarios.aspx" />
+    <Content Include="Administradores\Ventas.aspx" />
+    <Content Include="bootstrap\scripts\jquery.scrollTo.js" />
+    <Content Include="bootstrap\scripts\jquery.scrollTo.min.js" />
+    <Content Include="bootstrap\css\simple-sidebar.css" />
+    <Content Include="Clientes\acciones.aspx" />
+    <Content Include="Media\Imagenes\Amortiguadores\400px-Amortiguador.jpg" />
+    <Content Include="Media\Imagenes\Amortiguadores\amort.jpg" />
+    <Content Include="Media\Imagenes\Amortiguadores\amort1.png" />
+    <Content Include="Media\Imagenes\Amortiguadores\amort2.jpg" />
+    <Content Include="Media\Imagenes\Amortiguadores\amortmonr.png" />
+    <Content Include="Media\Imagenes\Amortiguadores\Fotomural-2-amortiguadores.png" />
+    <Content Include="Media\Imagenes\Anticongelantes\ant.jpg" />
+    <Content Include="Media\Imagenes\Anticongelantes\anticong1.jpg" />
+    <Content Include="Media\Imagenes\Anticongelantes\anticongelante2.jpg" />
+    <Content Include="Media\Imagenes\Anticongelantes\anticongelante3.jpg" />
+    <Content Include="Media\Imagenes\Anticongelantes\idiza_anticongelante_01.jpg" />
+    <Content Include="Media\Imagenes\Bomba de gasolina\bgasolina.jpg" />
+    <Content Include="Media\Imagenes\Bomba de gasolina\bgasolina1.gif" />
+    <Content Include="Media\Imagenes\Bomba de gasolina\bombagas2.jpeg" />
+    <Content Include="Media\Imagenes\Bomba de gasolina\bombas+de+gasolina.jpg" />
+    <Content Include="Media\Imagenes\Bomba de gasolina\fuel-pump-es.png" />
+    <Content Include="Media\Imagenes\Bomba de gasolina\Gasoline_b.jpg" />
+    <Content Include="Media\Imagenes\Botones\Contacto.jpg" />
+    <Content Include="Media\Imagenes\Botones\Facebook.jpg" />
+    <Content Include="Media\Imagenes\Botones\Objetivo.jpg" />
+    <Content Include="Media\Imagenes\Botones\Twitter.png" />
+    <Content Include="Media\Imagenes\Botones\Unidades de Aprendizaje.jpg" />
+    <Content Include="Media\Imagenes\Botones\Ventajas.jpg" />
+    <Content Include="Media\Imagenes\Bujias\Bujias_DoblePlatinum-928X257.jpg" />
+    <Content Include="Media\Imagenes\Bujias\Bujias_Iridium.jpg" />
+    <Content Include="Media\Imagenes\Bujias\doblepla.png" />
+    <Content Include="Media\Imagenes\Bujias\Estandar.jpg" />
+    <Content Include="Media\Imagenes\Bujias\iridium.jpg" />
+    <Content Include="Media\Imagenes\Bujias\platinum-tt_1.png" />
+    <Content Include="Media\Imagenes\Bujias\superplus.jpg" />
+    <Content Include="Media\Imagenes\Bujias\u denso.jpg" />
+    <Content Include="Media\Imagenes\Bujias\v-power.jpg" />
+    <Content Include="Media\Imagenes\Calipers\brembo1.jpg" />
+    <Content Include="Media\Imagenes\Calipers\brembo2.jpg" />
+    <Content Include="Media\Imagenes\Calipers\brembo3.jpg" />
+    <Content Include="Media\Imagenes\Calipers\brembo_calipers_4color.jpg" />
+    <Content Include="Media\Imagenes\Calipers\calipb.jpg" />
+    <Content Include="Media\Imagenes\Calipers\caliper-s.jpg" />
+    <Content Include="Media\Imagenes\Calipers\d2_17.jpg" />
+    <Content Include="Media\Imagenes\Calipers\d_4p.jpg" />
+    <Content Include="Media\Imagenes\Calipers\d_6p.jpg" />
+    <Content Include="Media\Imagenes\Calipers\frenos-caliper-500.jpg" />
+    <Content Include="Media\Imagenes\Escudo\11262586_902858346443602_945174353_o.jpg" />
+    <Content Include="Media\Imagenes\Escudo\1526009_902858326443604_59827740_o.jpg" />
+    <Content Include="Media\Imagenes\Filtros de Aire\K&amp;N1.jpg" />
+    <Content Include="Media\Imagenes\Filtros de Aire\k&amp;n2.jpg" />
+    <Content Include="Media\Imagenes\Filtros de Aire\K&amp;N3.jpg" />
+    <Content Include="Media\Imagenes\Llantas\llantas-amt.jpg" />
+    <Content Include="Media\Imagenes\Llantas\llantasbem.jpg" />
+    <Content Include="Media\Imagenes\Llantas\llantasnh.jpg" />
+    <Content Include="Media\Imagenes\Llantas\llants.png" />
+    <Content Include="Media\Imagenes\Llantas\michelin_bmw.jpg" />
+    <Content Include="Media\Imagenes\Llantas\neuma.jpg" />
+    <Content Include="Media\Imagenes\Marcas\AcOOL5050.jpg" />
+    <Content Include="Media\Imagenes\Marcas\anticong Conc.jpg" />
+    <Content Include="Media\Imagenes\Marcas\AntifreezeCol.jpg" />
+    <Content Include="Media\Imagenes\Marcas\bardahl-anticongelante-coolant-inteligente.jpg" />
+    <Content Include="Media\Imagenes\Marcas\bardahl-anticongelante-coolant.jpg" />
+    <Content Include="Media\Imagenes\Marcas\BgasBosch.jpg" />
+    <Content Include="Media\Imagenes\Marcas\bogas.jpg" />
+    <Content Include="Media\Imagenes\Marcas\bogeExtreme.jpg" />
+    <Content Include="Media\Imagenes\Marcas\Boge_atm.png" />
+    <Content Include="Media\Imagenes\Marcas\Bombasgas.jpg" />
+    <Content Include="Media\Imagenes\Marcas\Brembo_logo.jpg" />
+    <Content Include="Media\Imagenes\Marcas\CastrolEDGE.jpg" />
+    <Content Include="Media\Imagenes\Marcas\CastrolGTX.jpg" />
+    <Content Include="Media\Imagenes\Marcas\CastrolMagnatec.jpg" />
+    <Content Include="Media\Imagenes\Marcas\D2.jpg" />
+    <Content Include="Media\Imagenes\Marcas\dexcool.png" />
+    <Content Include="Media\Imagenes\Marcas\MaxAir.jpg" />
+    <Content Include="Media\Imagenes\Marcas\MaxLift.png" />
+    <Content Include="Media\Imagenes\Marcas\Q-Green.gif" />
+    <Content Include="Media\Imagenes\Marcas\Q-Xtrpro.gif" />
+    <Content Include="Media\Imagenes\Marcas\qs-ultimate.jpg" />
+    <Content Include="Media\Imagenes\Marcas\reflex.jpg" />
+    <Content Include="Media\Imagenes\Marcas\RoshFull.jpeg" />
+    <Content Include="Media\Imagenes\Marcas\SPEED-RACING1.png" />
+    <Content Include="Media\Imagenes\Marcas\Ti22.jpg" />
+    <Content Include="Media\Imagenes\Rines\Airstrike.jpg" />
+    <Content Include="Media\Imagenes\Rines\be5.jpg" />
+    <Content Include="Media\Imagenes\Rines\DARK_BLADE_Anthracite.png" />
+    <Content Include="Media\Imagenes\Rines\rine mom.png" />
+    <Content Include="Media\Imagenes\Rines\rinesbbsF.jpg" />
+    <Content Include="Media\Imagenes\Rines\rinmom.png" />
+    <Content Include="ajax.aspx" />
+    <Content Include="Aviso_de_Privacidad.aspx" />
+    <Content Include="bootstrap\colorbox\colorbox.css" />
+    <Content Include="bootstrap\colorbox\jquery.colorbox-min.js" />
+    <Content Include="bootstrap\colorbox\jquery.colorbox.js" />
+    <Content Include="Clientes\Carrito.aspx" />
+    <Content Include="Clientes\Compras.aspx" />
+    <Content Include="Clientes\Configuracion.aspx" />
+    <Content Include="Clientes\IndexClientes.aspx" />
+    <Content Include="Clientes\Productos\Aceites.aspx" />
+    <Content Include="Clientes\Productos\Amortiguadores.aspx" />
+    <Content Include="Clientes\Productos\Anticongelantes.aspx" />
+    <Content Include="Clientes\Productos\BombasGasolina.aspx" />
+    <Content Include="Clientes\Productos\Bujias.aspx" />
+    <Content Include="Clientes\Productos\Calipers.aspx" />
+    <Content Include="Clientes\Productos\FiltrosAire.aspx" />
+    <Content Include="Clientes\Productos\FiltrosDeAceite.aspx" />
+    <Content Include="Clientes\Productos\Neumaticos.aspx" />
+    <Content Include="Clientes\Productos\Rines.aspx" />
+    <Content Include="Clientes\Productos\Suspensiones.aspx" />
+    <Content Include="Media\Imagenes\Aceites\aceitecastrol.jpg" />
+    <Content Include="Media\Imagenes\Aceites\aceite_carro.jpg" />
+    <Content Include="Media\Imagenes\Aceites\aceite_carrodw.jpg" />
+    <Content Include="Media\Imagenes\Aceites\b926e2_quaker.jpg" />
+    <Content Include="Media\Imagenes\Aceites\cambiodeaceite.jpeg" />
+    <Content Include="Media\Imagenes\Aceites\vertaceite.jpg" />
+    <Content Include="Media\Imagenes\Amortiguadores\amortiguadores.jpeg" />
+    <Content Include="Media\Imagenes\Anticongelantes\anticongelante.jpg" />
+    <Content Include="Media\Imagenes\Bomba de gasolina\bombagas.jpg" />
+    <Content Include="Media\Imagenes\Bujias\Bujias.gif" />
+    <Content Include="Media\Imagenes\Bujias\bujias.jpg" />
+    <Content Include="Media\Imagenes\Bujias\BUJIAS2.jpg" />
+    <Content Include="Media\Imagenes\Bujias\bujias_home.jpg" />
+    <Content Include="Media\Imagenes\Bujias\bujij.jpg" />
+    <Content Include="Media\Imagenes\Calipers\Calip.jpg" />
+    <Content Include="Media\Imagenes\Calipers\caliper.jpg" />
+    <Content Include="Media\Imagenes\Escudo\asxadc.jpg" />
+    <Content Include="Media\Imagenes\Escudo\bugatti.jpg" />
+    <Content Include="Media\Imagenes\Escudo\IconoMH.ico" />
+    <Content Include="Media\Imagenes\Escudo\IntP.jpg" />
+    <Content Include="Media\Imagenes\Escudo\jaguar.jpg" />
+    <Content Include="Media\Imagenes\Escudo\MH.png" />
+    <Content Include="Media\Imagenes\Filtros de Aceite\aceite filtro.png" />
+    <Content Include="Media\Imagenes\Filtros de Aceite\f.aceite.jpg" />
+    <Content Include="Media\Imagenes\Filtros de Aceite\faceit.jpg" />
+    <Content Include="Media\Imagenes\Filtros de Aceite\filtro-de-aceite-.jpg" />
+    <Content Include="Media\Imagenes\Filtros de Aceite\HYUNDAI_ACCENT_Oil_Filter_26300_35054.jpg" />
+    <Content Include="Media\Imagenes\Filtros de Aceite\Wix_oil_filter_for_Corvair.jpg" />
+    <Content Include="Media\Imagenes\Filtros de Aire\Faire1.jpg" />
+    <Content Include="Media\Imagenes\Filtros de Aire\filtro de aire.jpg" />
+    <Content Include="Media\Imagenes\Filtros de Aire\filtro-de-aire-biconico-cromado-deportivo-lavable-para-autos-3866-MLA4873124349_082013-O.jpg" />
+    <Content Include="Media\Imagenes\Filtros de Aire\FiltroDeAire.jpg" />
+    <Content Include="Media\Imagenes\Filtros de Aire\kn-filtro-segunda-generacion-63-1561-dodge-ram-hemi-3478-MLM4247017961_052013-O.jpg" />
+    <Content Include="Media\Imagenes\Filtros de Aire\universal.jpg" />
+    <Content Include="Media\Imagenes\Llantas\neumaticos.jpg" />
+    <Content Include="Media\Imagenes\Marcas\ACDELCO.jpg" />
+    <Content Include="Media\Imagenes\Marcas\big_bardahl_perfetta.jpg" />
+    <Content Include="Media\Imagenes\Marcas\boge-logo_411722.jpg" />
+    <Content Include="Media\Imagenes\Marcas\bosch-logo.png" />
+    <Content Include="Media\Imagenes\Marcas\Bridgestone-logo.png" />
+    <Content Include="Media\Imagenes\Marcas\Castrol-Logo-EPS-vector-image.png" />
+    <Content Include="Media\Imagenes\Marcas\grob.png" />
+    <Content Include="Media\Imagenes\Marcas\K&amp;N.jpg" />
+    <Content Include="Media\Imagenes\Marcas\logo bbs.jpg" />
+    <Content Include="Media\Imagenes\Marcas\logo-denso 400.jpg" />
+    <Content Include="Media\Imagenes\Marcas\Logotipy_Prestone.gif" />
+    <Content Include="Media\Imagenes\Marcas\Mann.jpg" />
+    <Content Include="Media\Imagenes\Marcas\Michelin_logo.png" />
+    <Content Include="Media\Imagenes\Marcas\momo.jpg" />
+    <Content Include="Media\Imagenes\Marcas\Monroe.png" />
+    <Content Include="Media\Imagenes\Marcas\Mooog.jpg" />
+    <Content Include="Media\Imagenes\Marcas\Motorcraft.jpg" />
+    <Content Include="Media\Imagenes\Marcas\NGK_Spark_logo.png" />
+    <Content Include="Media\Imagenes\Marcas\Pirelli-logo.jpg" />
+    <Content Include="Media\Imagenes\Marcas\quaker-state-logo.png" />
+    <Content Include="Media\Imagenes\Marcas\ROSHFRANSw.jpg" />
+    <Content Include="Media\Imagenes\Rines\rin.jpg" />
+    <Content Include="Media\Imagenes\Staff\ALAN.jpg" />
+    <Content Include="Media\Imagenes\Staff\ALVARO.jpg" />
+    <Content Include="Media\Imagenes\Staff\COHEN.jpg" />
+    <Content Include="Media\Imagenes\Staff\EDGAR.jpg" />
+    <Content Include="Media\Imagenes\Suspensiones\susp-mcpherson-foto.jpg" />
+    <Content Include="Media\Imagenes\Suspensiones\susp1.jpg" />
+    <Content Include="Media\Imagenes\Suspensiones\susp2.jpg" />
+    <Content Include="Media\Imagenes\Suspensiones\susp5.jpg" />
+    <Content Include="Media\Imagenes\Suspensiones\suspension-03.jpg" />
+    <Content Include="Media\Imagenes\Suspensiones\suspension-04.jpg" />
+    <Content Include="Media\Imagenes_Productos\Amortiguador_bogas.jpg" />
+    <Content Include="Media\Imagenes_Productos\Amortiguador_bogeExtreme.jpg" />
+    <Content Include="Media\Imagenes_Productos\Amortiguador_Boge_atm.png" />
+    <Content Include="Media\Imagenes_Productos\Amortiguador_MaxAir.jpg" />
+    <Content Include="Media\Imagenes_Productos\Amortiguador_MaxLift.png" />
+    <Content Include="Media\Imagenes_Productos\Amortiguador_reflex.jpg" />
+    <Content Include="Media\Imagenes_Productos\Anticongelante5050.jpg" />
+    <Content Include="Media\Imagenes_Productos\Anticongelante_Concentrado.jpg" />
+    <Content Include="Media\Imagenes_Productos\Anticongelante_Coolant_Bardhal.jpg" />
+    <Content Include="Media\Imagenes_Productos\Anticongelante_Coolant_Prestone.jpg" />
+    <Content Include="Media\Imagenes_Productos\Anticongelante_DexCool.png" />
+    <Content Include="Media\Imagenes_Productos\Anticongelante_inteligente.jpg" />
+    <Content Include="Media\Imagenes_Productos\BombagasBosch.jpg" />
+    <Content Include="Media\Imagenes_Productos\Bombas_gas_AcD.jpg" />
+    <Content Include="Media\Imagenes_Productos\BoschDoblePlatinum.jpg" />
+    <Content Include="Media\Imagenes_Productos\BoschSuperPlus.jpg" />
+    <Content Include="Media\Imagenes_Productos\brembo1.jpg" />
+    <Content Include="Media\Imagenes_Productos\brembo2.jpg" />
+    <Content Include="Media\Imagenes_Productos\BujiaDensoDoble.jpg" />
+    <Content Include="Media\Imagenes_Productos\BujiaDensoU.jpg" />
+    <Content Include="Media\Imagenes_Productos\BujiaNGKEstandar.jpg" />
+    <Content Include="Media\Imagenes_Productos\BujiaNGKiridiumix.jpg" />
+    <Content Include="Media\Imagenes_Productos\BujiaNGKPower.jpg" />
+    <Content Include="Media\Imagenes_Productos\BujiasIridium.jpg" />
+    <Content Include="Media\Imagenes_Productos\CastrolEDGE.jpg" />
+    <Content Include="Media\Imagenes_Productos\CastrolGTX.jpg" />
+    <Content Include="Media\Imagenes_Productos\CastrolMagnatec.jpg" />
+    <Content Include="Media\Imagenes_Productos\d2_17.jpg" />
+    <Content Include="Media\Imagenes_Productos\Densobujia-platinum-tt.jpg" />
+    <Content Include="Media\Imagenes_Productos\d_4p.jpg" />
+    <Content Include="Media\Imagenes_Productos\d_6p.jpg" />
+    <Content Include="Media\Imagenes_Productos\FAire10.jpg" />
+    <Content Include="Media\Imagenes_Productos\FAire4990.jpg" />
+    <Content Include="Media\Imagenes_Productos\FAireK&amp;N9310.jpg" />
+    <Content Include="Media\Imagenes_Productos\FiltroAMotorCraft.jpeg" />
+    <Content Include="Media\Imagenes_Productos\FiltroAMotorCraft2.jpg" />
+    <Content Include="Media\Imagenes_Productos\FiltroAMotorCraft3.jpg" />
+    <Content Include="Media\Imagenes_Productos\QuakerGreen.gif" />
+    <Content Include="Media\Imagenes_Productos\QuakerUltimate.jpg" />
+    <Content Include="Media\Imagenes_Productos\QuakerXtrpro.gif" />
+    <Content Include="Media\Imagenes_Productos\RoshfransAk.jpeg" />
+    <Content Include="Media\Imagenes_Productos\RoshfransSpeed.png" />
+    <Content Include="Media\Imagenes_Productos\RoshfransTi22.jpg" />
+    <Content Include="Media\IForma.swf" />
+    <Content Include="Media\IMovimiento.swf" />
+    <Content Include="Media\Mascara1.swf" />
+    <Content Include="Media\Proyecto1.swf" />
+    <Content Include="Nosotros\Acerca_de_Nosotros.aspx" />
+    <Content Include="Nosotros\Contacto.aspx" />
+    <Content Include="Nosotros\Desarrollo_WebMultimedia.aspx" />
+    <Content Include="Nosotros\ImagenesNos\asp-net.jpg" />
+    <Content Include="Nosotros\ImagenesNos\Comercial MotorHack.mp4" />
+    <Content Include="Nosotros\ImagenesNos\csharp.jpg" />
+    <Content Include="Nosotros\ImagenesNos\HTML5.jpg" />
+    <Content Include="Nosotros\ImagenesNos\sistema-de-informacion.jpg" />
+    <Content Include="Nosotros\ImagenesNos\sistemas de informacion.jog.jpg" />
+    <Content Include="Nosotros\ImagenesNos\sistemas-de-informacion.png" />
+    <Content Include="Nosotros\ImagenesNos\tele.jpg" />
+    <Content Include="Nosotros\ImagenesNos\teleinfor.jpg" />
+    <Content Include="Nosotros\ImagenesNos\Teleinforred.jpg" />
+    <Content Include="Nosotros\Ingles.aspx" />
+    <Content Include="Nosotros\Objetivo.aspx" />
+    <Content Include="Nosotros\Probabilidad_Estadistica.aspx" />
+    <Content Include="Nosotros\Programacion_Avanzada.aspx" />
+    <Content Include="Nosotros\Sistemas_Informacion.aspx" />
+    <Content Include="Nosotros\Teleinformatica.aspx" />
+    <Content Include="Nosotros\Unidades_Aprendizaje.aspx" />
+    <Content Include="Nosotros\Ventajas.aspx" />
+    <Content Include="Olvidaste_Contrasena.aspx" />
+    <Content Include="otro.aspx" />
+    <Content Include="plantilla.Master" />
+    <Content Include="bootstrap\css\bootstrap-theme.css.map" />
+    <Content Include="bootstrap\css\bootstrap.css.map" />
+    <Content Include="bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Clientes\Cliente.Master" />
+    <Content Include="Nosotros\Nosotros.Master" />
+    <Content Include="Administradores\Administrador.Master" />
+    <Content Include="Administradores\font\fontawesome-webfont-0.eot" />
+    <Content Include="Administradores\font\fontawesome-webfont-62877.eot" />
+    <Content Include="Administradores\font\fontawesome-webfont-62877.ttf" />
+    <Content Include="Administradores\font\fontawesome-webfont-62877.woff" />
+    <Content Include="Administradores\font\glyphicons-regular-0.eot" />
+    <Content Include="Administradores\font\glyphicons-regular.eot" />
+    <Content Include="Administradores\font\glyphicons-regular.ttf" />
+    <Content Include="Administradores\font\glyphicons-regular.woff" />
+    <Content Include="Administradores\font\glyphiconshalflings-regular-0.eot" />
+    <Content Include="Administradores\font\glyphiconshalflings-regular.eot" />
+    <Content Include="Administradores\font\glyphiconshalflings-regular.ttf" />
+    <Content Include="Administradores\font\glyphiconshalflings-regular.woff" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bootstrap\css\bootstrap-theme.css" />
+    <Content Include="bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="bootstrap\css\bootstrap.cosmo.css" />
+    <Content Include="bootstrap\css\bootstrap.css" />
+    <Content Include="bootstrap\css\bootstrap.cyborg.css" />
+    <Content Include="bootstrap\css\bootstrap.dark.css" />
+    <Content Include="bootstrap\css\bootstrap.min.css" />
+    <Content Include="bootstrap\css\bootstrap.super.css" />
+    <Content Include="bootstrap\css\bootstrap.unit.css" />
+    <Content Include="bootstrap\css\styles.css" />
+    <Content Include="bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="bootstrap\scripts\bootstrap.js" />
+    <Content Include="bootstrap\scripts\bootstrap.min.js" />
+    <Content Include="bootstrap\scripts\jquery.min.js" />
+    <Content Include="bootstrap\scripts\npm.js" />
+    <Content Include="Index.aspx" />
+    <Content Include="Terminos_y_Condiciones.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administradores\Administrador.Master.cs">
+      <DependentUpon>Administrador.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administradores\Administrador.Master.designer.cs">
+      <DependentUpon>Administrador.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Administradores\AgregarProductos.aspx.cs">
+      <DependentUpon>AgregarProductos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administradores\AgregarProductos.aspx.designer.cs">
+      <DependentUpon>AgregarProductos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administradores\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administradores\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administradores\IngresarDevoluciones.aspx.cs">
+      <DependentUpon>IngresarDevoluciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administradores\IngresarDevoluciones.aspx.designer.cs">
+      <DependentUpon>IngresarDevoluciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administradores\Productos.aspx.cs">
+      <DependentUpon>Productos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administradores\Productos.aspx.designer.cs">
+      <DependentUpon>Productos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administradores\Usuarios.aspx.cs">
+      <DependentUpon>Usuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administradores\Usuarios.aspx.designer.cs">
+      <DependentUpon>Usuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administradores\Ventas.aspx.cs">
+      <DependentUpon>Ventas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administradores\Ventas.aspx.designer.cs">
+      <DependentUpon>Ventas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax.aspx.cs">
+      <DependentUpon>ajax.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajax.aspx.designer.cs">
+      <DependentUpon>ajax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aviso_de_Privacidad.aspx.cs">
+      <DependentUpon>Aviso_de_Privacidad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aviso_de_Privacidad.aspx.designer.cs">
+      <DependentUpon>Aviso_de_Privacidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes\acciones.aspx.cs">
+      <DependentUpon>acciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Clientes\acciones.aspx.designer.cs">
+      <DependentUpon>acciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes\Carrito.aspx.cs">
+      <DependentUpon>Carrito.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Clientes\Carrito.aspx.designer.cs">
+      <DependentUpon>Carrito.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes\Cliente.Master.cs">
+      <DependentUpon>Cliente.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Clientes\Cliente.Master.designer.cs">
+      <DependentUpon>Cliente.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes\Compras.aspx.cs">
+      <DependentUpon>Compras.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Clientes\Compras.aspx.designer.cs">
+      <DependentUpon>Compras.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes\Configuracion.aspx.cs">
+      <DependentUpon>Configuracion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Clientes\Configuracion.aspx.designer.cs">
+      <DependentUpon>Configuracion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes\IndexClientes.aspx.cs">
+      <DependentUpon>IndexClientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Clientes\IndexClientes.aspx.designer.cs">
+      <DependentUpon>IndexClientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes\MailContrasena.cs" />
+    <Compile Include="Clientes\Productos\Aceites.aspx.cs">
+      <DependentUpon>Aceites.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Clientes\Productos\Aceites.aspx.designer.cs">
+      <DependentUpon>Aceites.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes\Productos\Amortiguadores.aspx.cs">
+      <DependentUpon>Amortiguadores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Clientes\Productos\Amortiguadores.aspx.designer.cs">
+      <DependentUpon>Amortiguadores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes\Productos\Anticongelantes.aspx.cs">
+      <DependentUpon>Anticongelantes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Clientes\Productos\Anticongelantes.aspx.designer.cs">
+      <DependentUpon>Anticongelantes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes\Productos\BombasGasolina.aspx.cs">
+      <DependentUpon>BombasGasolina.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Clientes\Productos\BombasGasolina.aspx.designer.cs">
+      <DependentUpon>BombasGasolina.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes\Productos\Bujias.aspx.cs">
+      <DependentUpon>Bujias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Clientes\Productos\Bujias.aspx.designer.cs">
+      <DependentUpon>Bujias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes\Productos\Calipers.aspx.cs">
+      <DependentUpon>Calipers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Clientes\Productos\Calipers.aspx.designer.cs">
+      <DependentUpon>Calipers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes\Productos\FiltrosAire.aspx.cs">
+      <DependentUpon>FiltrosAire.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Clientes\Productos\FiltrosAire.aspx.designer.cs">
+      <DependentUpon>FiltrosAire.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes\Productos\FiltrosDeAceite.aspx.cs">
+      <DependentUpon>FiltrosDeAceite.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Clientes\Productos\FiltrosDeAceite.aspx.designer.cs">
+      <DependentUpon>FiltrosDeAceite.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes\Productos\Neumaticos.aspx.cs">
+      <DependentUpon>Neumaticos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Clientes\Productos\Neumaticos.aspx.designer.cs">
+      <DependentUpon>Neumaticos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes\Productos\Rines.aspx.cs">
+      <DependentUpon>Rines.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Clientes\Productos\Rines.aspx.designer.cs">
+      <DependentUpon>Rines.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes\Productos\Suspensiones.aspx.cs">
+      <DependentUpon>Suspensiones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Clientes\Productos\Suspensiones.aspx.designer.cs">
+      <DependentUpon>Suspensiones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modelos\Almacen.cs" />
+    <Compile Include="Modelos\Carrito.cs" />
+    <Compile Include="Modelos\Catalogo.cs" />
+    <Compile Include="Modelos\Clientes.cs" />
+    <Compile Include="Modelos\Comentario.cs" />
+    <Compile Include="Modelos\DetalleVenta.cs" />
+    <Compile Include="Modelos\Entrada.cs" />
+    <Compile Include="Modelos\Productos.cs" />
+    <Compile Include="Modelos\Usuarios.cs" />
+    <Compile Include="Modelos\Ventas.cs" />
+    <Compile Include="Nosotros\Acerca_de_Nosotros.aspx.cs">
+      <DependentUpon>Acerca_de_Nosotros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Nosotros\Acerca_de_Nosotros.aspx.designer.cs">
+      <DependentUpon>Acerca_de_Nosotros.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Nosotros\Contacto.aspx.cs">
+      <DependentUpon>Contacto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Nosotros\Contacto.aspx.designer.cs">
+      <DependentUpon>Contacto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Nosotros\Desarrollo_WebMultimedia.aspx.cs">
+      <DependentUpon>Desarrollo_WebMultimedia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Nosotros\Desarrollo_WebMultimedia.aspx.designer.cs">
+      <DependentUpon>Desarrollo_WebMultimedia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Nosotros\Ingles.aspx.cs">
+      <DependentUpon>Ingles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Nosotros\Ingles.aspx.designer.cs">
+      <DependentUpon>Ingles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Nosotros\Nosotros.Master.cs">
+      <DependentUpon>Nosotros.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Nosotros\Nosotros.Master.designer.cs">
+      <DependentUpon>Nosotros.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Nosotros\Objetivo.aspx.cs">
+      <DependentUpon>Objetivo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Nosotros\Objetivo.aspx.designer.cs">
+      <DependentUpon>Objetivo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Nosotros\Probabilidad_Estadistica.aspx.cs">
+      <DependentUpon>Probabilidad_Estadistica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Nosotros\Probabilidad_Estadistica.aspx.designer.cs">
+      <DependentUpon>Probabilidad_Estadistica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Nosotros\Programacion_Avanzada.aspx.cs">
+      <DependentUpon>Programacion_Avanzada.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Nosotros\Programacion_Avanzada.aspx.designer.cs">
+      <DependentUpon>Programacion_Avanzada.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Nosotros\Sistemas_Informacion.aspx.cs">
+      <DependentUpon>Sistemas_Informacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Nosotros\Sistemas_Informacion.aspx.designer.cs">
+      <DependentUpon>Sistemas_Informacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Nosotros\Teleinformatica.aspx.cs">
+      <DependentUpon>Teleinformatica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Nosotros\Teleinformatica.aspx.designer.cs">
+      <DependentUpon>Teleinformatica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Nosotros\Unidades_Aprendizaje.aspx.cs">
+      <DependentUpon>Unidades_Aprendizaje.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Nosotros\Unidades_Aprendizaje.aspx.designer.cs">
+      <DependentUpon>Unidades_Aprendizaje.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Nosotros\Ventajas.aspx.cs">
+      <DependentUpon>Ventajas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Nosotros\Ventajas.aspx.designer.cs">
+      <DependentUpon>Ventajas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Olvidaste_Contrasena.aspx.cs">
+      <DependentUpon>Olvidaste_Contrasena.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Olvidaste_Contrasena.aspx.designer.cs">
+      <DependentUpon>Olvidaste_Contrasena.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="otro.aspx.cs">
+      <DependentUpon>otro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="otro.aspx.designer.cs">
+      <DependentUpon>otro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="plantilla.Master.cs">
+      <DependentUpon>plantilla.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="plantilla.Master.designer.cs">
+      <DependentUpon>plantilla.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Terminos_y_Condiciones.aspx.cs">
+      <DependentUpon>Terminos_y_Condiciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Terminos_y_Condiciones.aspx.designer.cs">
+      <DependentUpon>Terminos_y_Condiciones.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Conexion\Conexion.csproj">
+      <Project>{62138ab9-5030-4241-91fc-55b6cae38bc0}</Project>
+      <Name>Conexion</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1255</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:1255/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
